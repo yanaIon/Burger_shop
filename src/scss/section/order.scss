@@ -1,0 +1,145 @@
+.order {
+  background: url(../img/bg/order.jpg) center center / cover no-repeat;
+  color: #fff;
+}
+
+.order__container {
+  &:first-child {
+    padding-top: rem(100px);
+  }
+}
+.form {
+  display: flex;
+  padding-top: rem(40px);
+
+  @include tablets {
+    flex-direction: column;
+    padding: 0 10%;
+  }
+}
+
+.form__input {
+  border: none;
+  border-radius: rem(5px);
+  padding: rem(8px) rem(20px);
+  width: 100%;
+  margin-bottom: rem(20px);
+}
+
+.form__row {
+  display: flex;
+}
+
+.form__block {
+  flex: 1;
+  margin-right: rem(20px);
+
+  &:last-child {
+    margin-right: rem(0px);
+  }
+}
+
+.form__column {
+  padding-right: rem(20px);
+  width: 50%;
+  &:last-child {
+    padding-right: rem(0px);
+  }
+
+  @include tablets {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.form__title {
+  margin-bottom: rem(7px);
+}
+
+.form__input--textarea {
+  height: rem(109px);
+}
+
+.form__radio-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.form__radio-item {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: rem(29px);
+  margin-right: rem(20px);
+  &:before {
+    content: '';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: rem(15px);
+    width: rem(15px);
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: rem(10px);
+  }
+}
+
+.form__radio-item-red {
+  content: '';
+  display: none;
+  height: rem(7px);
+  width: rem(7px);
+  background-color: #e35028;
+  border-radius: 50%;
+  position: absolute;
+  left: rem(4px);
+}
+
+.form__radio-item .form__radio-input:checked ~ .form__radio-item-red {
+  display: inline-block;
+}
+
+.form__checkbox-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.form__checkbox-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: rem(20px);
+  &:before {
+    content: '';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: rem(15px);
+    width: rem(15px);
+    background-color: #fff;
+    border-radius: rem(2px);
+    margin-right: rem(10px);
+  }
+}
+
+.form__checkbox-item-red {
+  display: none;
+  background-color: transparent;
+  position: absolute;
+  top: rem(2px);
+}
+
+.checkmark__icon {
+  fill: #e45028;
+}
+
+.form__checkbox-item .form__checkbox-input:checked ~ .form__checkbox-item-red {
+  display: inline-block;
+}
+
+.order-link_transparent {
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+  cursor: pointer;
+}

@@ -1,0 +1,77 @@
+.map {
+  background-image: url(../img/bg/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  background-color: #131313;
+  min-height: rem(60px);
+  left: 0;
+  bottom: 0;
+}
+
+.footer__content {
+  display: flex;
+  text-align: center;
+  padding: rem(11px) rem(80px);
+
+  @include phones {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer__content-contacts {
+  font-size: rem(14px);
+  color: #ffffff;
+  width: 50%;
+  text-align: left;
+
+  @include phones {
+    text-align: center;
+  }
+}
+
+.footer__content-number {
+  font-weight: bold;
+  color: #9a3a20;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.footer__content-social {
+  width: 50%;
+  text-align: right;
+  padding-top: rem(20px);
+
+  @include phones {
+    text-align: center;
+  }
+}
+
+.social {
+  width: rem(20px);
+  height: rem(20px);
+  margin-right: rem(20px);
+  &:hover {
+    fill: #fff;
+    transition: 0.3;
+    cursor: pointer;
+  }
+  &:last-child {
+    margin-right: rem(0px);
+  }
+}

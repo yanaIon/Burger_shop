@@ -1,0 +1,46 @@
+.best {
+  background-image: url(../img/bg/best-bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.best__list {
+  display: flex;
+  justify-content: space-around;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.best__item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @include phones {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.best__text {
+  @include phones {
+    text-align: left;
+    padding-left: 10%;
+  }
+}
+.best__title {
+  font-family: Lifehack;
+  font-size: rem(24px);
+}
+
+.icons {
+  flex-shrink: 0;
+}

@@ -1,0 +1,120 @@
+.team {
+  background: url(../img/bg/team.jpg) center center / cover no-repeat;
+  position: relative;
+}
+
+.team__container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background: rgba(#2f3234, 0.93);
+
+  &:first-child {
+    padding-top: rem(60px);
+  }
+
+  @include tablets {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.section__title--align_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: rem(46px);
+}
+
+.acco {
+  padding-left: rem(200px);
+
+  @include tablets {
+    padding: 0 14%;
+  }
+}
+
+.acco__trigger {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: rem(10px);
+
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: rem(5px) solid transparent;
+    border-top-color: $yellow;
+    border-bottom-width: rem(0px);
+    margin-right: rem(10px);
+  }
+
+  @include tablets {
+    font-family: Gagalin;
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+.acco__item {
+  padding-bottom: rem(35px);
+}
+
+.acco__item_active {
+  .acco__trigger {
+    color: $yellow;
+
+    &:before {
+      transform: rotate(180deg);
+    }
+  }
+  .acco__content {
+    display: inline-flex;
+    height: auto;
+
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.acco__desc {
+  color: #fff;
+  margin-left: rem(20px);
+  font-size: rem(14px);
+  padding-right: rem(98px);
+
+  @include tablets {
+    text-align: center;
+    padding-left: 14%;
+    padding-top: 5%;
+  }
+}
+
+.acco__desc-title {
+  font-weight: bold;
+}
+
+.acco__content {
+  display: flex;
+  height: 0;
+  overflow: hidden;
+}
+
+.acco__pic {
+  background-image: url(../img/content/teammate.jpg);
+  background-position: center;
+  background-size: cover;
+  width: rem(100px);
+  height: rem(100px);
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: rem(100px);
+  flex-shrink: 0;
+}

@@ -1,0 +1,75 @@
+.reviews__list {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews__item {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 50%;
+  width: 25%;
+  filter: grayscale(100%);
+  position: relative;
+  &:hover {
+    .reviews__hover {
+      opacity: 1;
+    }
+  }
+
+  @include tablets {
+    width: 50%;
+    height: 25%;
+  }
+}
+
+.reviews__hover {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(#444646, 0.5);
+  padding: rem(50px) rem(19px) rem(19px);
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  @include tablets {
+    text-align: center;
+  }
+}
+
+.btn {
+  color: #fff;
+  font-size: rem(13px);
+  text-transform: uppercase;
+  background-color: #2f3234;
+  border: transparent;
+  width: rem(110px);
+  height: rem(35px);
+  padding: rem(12px);
+  border-radius: rem(5px);
+  cursor: pointer;
+  &:hover {
+    background-color: #4c4f4f;
+  }
+}
+
+.reviews__title {
+  @include tablets {
+    font-family: Gagalin;
+    font-size: 1.875rem;
+  }
+}
+.reviews__text {
+  font-family: Ubuntu;
+  font-size: rem(14px);
+  padding-bottom: rem(17px);
+
+  @include phones {
+    display: none;
+  }
+}

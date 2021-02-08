@@ -1,0 +1,15 @@
+.scroll-down-btn {
+  border: transparent;
+  background: transparent;
+  display: block;
+  position: absolute;
+  bottom: rem(41px);
+  left: 50%;
+  transform: translateX(-50%);
+  outline: none;
+  cursor: pointer;
+}
+
+.icon {
+  fill: #ffffff;
+}
