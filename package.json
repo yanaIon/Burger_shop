@@ -1,7 +1,6 @@
 {
   "name": "burgernew",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "gulp": "gulp"
@@ -11,6 +10,21 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-rm": "^2.0.0"
-  }
+    "gulp-concat": "^2.6.1",
+    "gulp-rm": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanaIon/Burger_shop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yanaIon/Burger_shop/issues"
+  },
+  "homepage": "https://github.com/yanaIon/Burger_shop#readme",
+  "description": ""
 }
