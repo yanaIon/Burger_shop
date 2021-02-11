@@ -12,7 +12,7 @@
   background: rgba(#2f3234, 0.93);
 
   &:first-child {
-    padding-top: rem(60px);
+    padding-top: 60px;
   }
 
   @include tablets {
@@ -25,11 +25,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: rem(46px);
+  padding-bottom: 46px;
 }
 
 .acco {
-  padding-left: rem(200px);
+  padding-left: 200px;
 
   @include tablets {
     padding: 0 14%;
@@ -42,16 +42,16 @@
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  padding-bottom: rem(10px);
+  padding-bottom: 10px;
 
   &:before {
     content: '';
     width: 0;
     height: 0;
-    border: rem(5px) solid transparent;
+    border: 5px solid transparent;
     border-top-color: $yellow;
-    border-bottom-width: rem(0px);
-    margin-right: rem(10px);
+    border-bottom-width: 0px;
+    margin-right: 10px;
   }
 
   @include tablets {
@@ -62,7 +62,7 @@
 }
 
 .acco__item {
-  padding-bottom: rem(35px);
+  padding-bottom: 35px;
 }
 
 .acco__item_active {
@@ -86,9 +86,9 @@
 
 .acco__desc {
   color: #fff;
-  margin-left: rem(20px);
-  font-size: rem(14px);
-  padding-right: rem(98px);
+  margin-left: 20px;
+  font-size: 14px;
+  padding-right: 98px;
 
   @include tablets {
     text-align: center;
@@ -111,10 +111,10 @@
   background-image: url(../img/content/teammate.jpg);
   background-position: center;
   background-size: cover;
-  width: rem(100px);
-  height: rem(100px);
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   overflow: hidden;
-  max-width: rem(100px);
+  max-width: 100px;
   flex-shrink: 0;
 }

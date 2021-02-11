@@ -6,8 +6,8 @@
 
 .section__title--align_right {
   color: #ffffff;
-  margin-left: rem(100px);
-  padding-top: rem(100px);
+  margin-left: 100px;
+  padding-top: 100px;
 
   @include tablets {
     justify-content: left;
@@ -33,7 +33,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   height: 100vh;
-  width: rem(80px);
+  width: 80px;
   position: relative;
 
   &:before {
@@ -49,20 +49,20 @@
 
 .menu__list-title span {
   position: absolute;
-  bottom: rem(-240px);
+  bottom: -240px;
   transform: rotate(-90deg);
   transform-origin: 0 0;
   align-items: center;
   white-space: nowrap;
-  width: rem(30px);
-  height: rem(291px);
+  width: 30px;
+  height: 291px;
   color: #ffffff;
   font-family: Gagalin;
-  font-size: rem(40px);
+  font-size: 40px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
-  line-height: rem(63.75px);
+  line-height: 63.75px;
   text-align: center;
   cursor: pointer;
 }
@@ -70,16 +70,16 @@
 .menu__list-item_active {
   .menu__list-content {
     display: flex;
-    width: rem(540px);
+    width: 540px;
     height: 100vh;
     background-color: rgba(#2f3234, 0.93);
     color: #ffffff;
     text-align: left;
     justify-content: center;
     font-family: Ubuntu;
-    font-size: rem(14px);
-    line-height: rem(24px);
-    padding: rem(60px) rem(37px) 0 rem(33px);
+    font-size: 14px;
+    line-height: 24px;
+    padding: 60px 37px 0 33px;
 
     @include tablets {
       width: 100%;

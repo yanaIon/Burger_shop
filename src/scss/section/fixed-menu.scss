@@ -1,14 +1,14 @@
 .fixed-menu {
   position: fixed;
-  top: rem(90px);
-  right: rem(52px);
+  top: 90px;
+  right: 52px;
 
   @include tablets {
     display: none;
   }
 }
 .fixed-menu__item {
-  padding-bottom: rem(10px);
+  padding-bottom: 10px;
   &--active {
     .fixed-menu__dot {
       border-color: #fff;
@@ -27,14 +27,14 @@
 
 .fixed-menu__dot {
   content: '.';
-  @include circle(rem(15px), transparent);
-  border: rem(1px) solid transparent;
+  @include circle(15px, transparent);
+  border: 1px solid transparent;
   position: relative;
   outline: none;
 
   &:before {
     content: '';
-    @include circle(rem(6px), #fff);
+    @include circle(6px, #fff);
     position: absolute;
     top: 50%;
     left: 50%;

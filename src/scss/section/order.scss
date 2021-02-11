@@ -5,12 +5,12 @@
 
 .order__container {
   &:first-child {
-    padding-top: rem(100px);
+    padding-top: 100px;
   }
 }
 .form {
   display: flex;
-  padding-top: rem(40px);
+  padding-top: 40px;
 
   @include tablets {
     flex-direction: column;
@@ -20,10 +20,10 @@
 
 .form__input {
   border: none;
-  border-radius: rem(5px);
-  padding: rem(8px) rem(20px);
+  border-radius: 5px;
+  padding: 8px 20px;
   width: 100%;
-  margin-bottom: rem(20px);
+  margin-bottom: 20px;
 }
 
 .form__row {
@@ -32,18 +32,18 @@
 
 .form__block {
   flex: 1;
-  margin-right: rem(20px);
+  margin-right: 20px;
 
   &:last-child {
-    margin-right: rem(0px);
+    margin-right: 0px;
   }
 }
 
 .form__column {
-  padding-right: rem(20px);
+  padding-right: 20px;
   width: 50%;
   &:last-child {
-    padding-right: rem(0px);
+    padding-right: 0px;
   }
 
   @include tablets {
@@ -53,11 +53,11 @@
 }
 
 .form__title {
-  margin-bottom: rem(7px);
+  margin-bottom: 7px;
 }
 
 .form__input--textarea {
-  height: rem(109px);
+  height: 109px;
 }
 
 .form__radio-input {
@@ -69,30 +69,30 @@
   display: inline-flex;
   align-items: center;
   position: relative;
-  margin-bottom: rem(29px);
-  margin-right: rem(20px);
+  margin-bottom: 29px;
+  margin-right: 20px;
   &:before {
     content: '';
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: rem(15px);
-    width: rem(15px);
+    height: 15px;
+    width: 15px;
     background-color: #fff;
     border-radius: 50%;
-    margin-right: rem(10px);
+    margin-right: 10px;
   }
 }
 
 .form__radio-item-red {
   content: '';
   display: none;
-  height: rem(7px);
-  width: rem(7px);
+  height: 7px;
+  width: 7px;
   background-color: #e35028;
   border-radius: 50%;
   position: absolute;
-  left: rem(4px);
+  left: 4px;
 }
 
 .form__radio-item .form__radio-input:checked ~ .form__radio-item-red {
@@ -108,17 +108,17 @@
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: rem(20px);
+  margin-bottom: 20px;
   &:before {
     content: '';
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: rem(15px);
-    width: rem(15px);
+    height: 15px;
+    width: 15px;
     background-color: #fff;
-    border-radius: rem(2px);
-    margin-right: rem(10px);
+    border-radius: 2px;
+    margin-right: 10px;
   }
 }
 
@@ -126,7 +126,7 @@
   display: none;
   background-color: transparent;
   position: absolute;
-  top: rem(2px);
+  top: 2px;
 }
 
 .checkmark__icon {

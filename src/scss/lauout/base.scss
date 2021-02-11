@@ -46,9 +46,9 @@ footer {
 .visuallyhidden {
   position: absolute;
 
-  width: rem(1px);
-  height: rem(1px);
-  margin: rem(-1px);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
   border: 0;
   padding: 0;
 

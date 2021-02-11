@@ -33,7 +33,7 @@
   right: 0;
   bottom: 0;
   background: rgba(#444646, 0.5);
-  padding: rem(50px) rem(19px) rem(19px);
+  padding: 50px 19px 19px;
   opacity: 0;
   transition: opacity 0.3s;
 
@@ -44,14 +44,14 @@
 
 .btn {
   color: #fff;
-  font-size: rem(13px);
+  font-size: 13px;
   text-transform: uppercase;
   background-color: #2f3234;
   border: transparent;
-  width: rem(110px);
-  height: rem(35px);
-  padding: rem(12px);
-  border-radius: rem(5px);
+  width: 110px;
+  height: 35px;
+  padding: 12px;
+  border-radius: 5px;
   cursor: pointer;
   &:hover {
     background-color: #4c4f4f;
@@ -66,8 +66,8 @@
 }
 .reviews__text {
   font-family: Ubuntu;
-  font-size: rem(14px);
-  padding-bottom: rem(17px);
+  font-size: 14px;
+  padding-bottom: 17px;
 
   @include phones {
     display: none;

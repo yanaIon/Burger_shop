@@ -12,7 +12,7 @@
 .footer {
   position: absolute;
   background-color: #131313;
-  min-height: rem(60px);
+  min-height: 60px;
   left: 0;
   bottom: 0;
 }
@@ -20,7 +20,7 @@
 .footer__content {
   display: flex;
   text-align: center;
-  padding: rem(11px) rem(80px);
+  padding: 11px 80px;
 
   @include phones {
     width: 100%;
@@ -33,7 +33,7 @@
 }
 
 .footer__content-contacts {
-  font-size: rem(14px);
+  font-size: 14px;
   color: #ffffff;
   width: 50%;
   text-align: left;
@@ -55,7 +55,7 @@
 .footer__content-social {
   width: 50%;
   text-align: right;
-  padding-top: rem(20px);
+  padding-top: 20px;
 
   @include phones {
     text-align: center;
@@ -63,15 +63,15 @@
 }
 
 .social {
-  width: rem(20px);
-  height: rem(20px);
-  margin-right: rem(20px);
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
   &:hover {
     fill: #fff;
     transition: 0.3;
     cursor: pointer;
   }
   &:last-child {
-    margin-right: rem(0px);
+    margin-right: 0px;
   }
 }
