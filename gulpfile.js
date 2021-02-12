@@ -1,4 +1,4 @@
-const { src, dest, task, series, watch } = require('gulp'); // dest-функция записывает результат
+const { src, dest, task, series, watch, parallel } = require('gulp'); // dest-функция записывает результат
 const rm = require('gulp-rm'); // удаляет папки
 const sass = require('gulp-sass'); // компилирует файлы scss в css
 const concat = require('gulp-concat'); //склеивает файлы в один
@@ -153,13 +153,15 @@ task(
   'default',
   series(
     'clean',
-    'copy:html',
-    'copy:fonts',
-    'copy:img',
-    'styles',
-    'scripts',
-    'icons:best',
-    'icons:footer',
+    parallel(
+      'copy:html',
+      'copy:fonts',
+      'copy:img',
+      'styles',
+      'scripts',
+      'icons:best',
+      'icons:footer'
+    ),
     'server'
   )
 );
