@@ -1,0 +1,85 @@
+.slider {
+  background-image: linear-gradient(to bottom, #f9b43b, #eb8c38, #f9b43b);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+}
+
+.slider__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.slider_wrap {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider_lists {
+  display: flex;
+  width: 500%;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.slider_item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 20%;
+  height: 100%;
+}
+.slider_content {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.slider__img-container {
+  display: flex;
+  width: 55%;
+}
+
+.slider__img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider__description {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section__title-color_white {
+  color: white;
+  line-height: 1;
+}
+
+.slider__description-text {
+  color: white;
+  font-size: 14px;
+  font-family: 'Ubuntu';
+}
+
+.description-text__price {
+  color: #e35028;
+  font-size: 20px;
+  font-family: 'Gagalin';
+}
+
+.description-text__price span {
+  font-size: 40px;
+}
