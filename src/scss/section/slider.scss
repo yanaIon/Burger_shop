@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 95%;
+  width: 100%;
   height: 100%;
   flex-direction: column;
 }
@@ -18,7 +18,7 @@
 .slider_wrap {
   display: flex;
   height: 100%;
-  width: 100%;
+  width: 95%;
   overflow: hidden;
 }
 
@@ -27,6 +27,24 @@
   width: 500%;
   flex-shrink: 0;
   position: relative;
+}
+
+.scroll-down-btn__left {
+  transform: rotate(90deg);
+  top: 50%;
+  left: 3%;
+  height: 15px;
+  width: 29px;
+  padding: 0;
+}
+
+.scroll-down-btn__right {
+  transform: rotate(270deg);
+  top: 50%;
+  left: 95%;
+  height: 15px;
+  width: 29px;
+  padding: 0;
 }
 
 .slider_item {
@@ -51,8 +69,9 @@
 }
 
 .slider__img {
-  height: 100%;
   display: flex;
+  height: 100%;
+  width: 100%;
   align-items: center;
 }
 
@@ -74,12 +93,18 @@
   font-family: 'Ubuntu';
 }
 
+.slider__description-text-order {
+  display: flex;
+  align-items: center;
+}
+
 .description-text__price {
   color: #e35028;
-  font-size: 20px;
+  font-size: 30px;
   font-family: 'Gagalin';
+  margin-right: 10%;
 }
 
 .description-text__price span {
-  font-size: 40px;
+  font-size: 50px;
 }
