@@ -108,3 +108,92 @@
 .description-text__price span {
   font-size: 50px;
 }
+
+.slider__composition {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  background-color: #e35028;
+  bottom: 70%;
+  left: 0;
+  cursor: pointer;
+}
+.slider__composition-products {
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  position: absolute;
+  width: 270px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  left: 100%;
+  opacity: 0.9;
+}
+.slider__composition-products-elem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.slider__composition-products-img {
+  width: 40px;
+  height: 40px;
+  margin: 3%;
+}
+
+.slider__composition:hover {
+  background-color: #cb411b;
+  .slider__composition-products {
+    display: flex;
+  }
+}
+
+.slider__composition-img {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 10px;
+}
+
+.slider__composition-name {
+  position: absolute;
+  font-family: 'Gagalin';
+  font-size: 14px;
+  color: white;
+  bottom: 10px;
+}
+
+.slider__kkal {
+  display: flex;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 70%;
+  left: 0;
+  justify-content: center;
+}
+.slider__kkal-img {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+}
+
+.slider__kkal-quantity {
+  position: absolute;
+  font-family: 'Gagalin';
+  font-size: 20px;
+  color: white;
+  margin-top: 40%;
+}
+
+.slider__kkal-text {
+  position: absolute;
+  font-family: 'Gagalin';
+  font-size: 20px;
+  color: white;
+  margin-top: 90%;
+}

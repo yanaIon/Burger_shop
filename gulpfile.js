@@ -132,6 +132,31 @@ task('icons:footer', () => {
     .pipe(dest('dist/img/icons/social'));
 });
 
+task('icons:slider', () => {
+  return src('src/img/icons/slider/*.svg')
+    .pipe(
+      svgo({
+        plugins: [
+          {
+            removeAttrs: {
+              attrs: '(fill|stroke|style|width|height|data.*)',
+            },
+          },
+        ],
+      })
+    )
+    .pipe(
+      svgSprite({
+        mode: {
+          symbol: {
+            sprite: '../sprite.svg',
+          },
+        },
+      })
+    )
+    .pipe(dest('dist/img/icons/slider'));
+});
+
 task('server', () => {
   browserSync.init({
     server: {
@@ -148,6 +173,7 @@ watch('./src/img/**/*', series('copy:img')); // следит за измене�
 watch('src/scripts/*.js', series('scripts')); // следит за изменениями в js
 watch('src/icons/best/*.svg', series('icons:best')); // следит за изменениями в спрайтах
 watch('src/icons/social/*.svg', series('icons:footer')); // следит за изменениями в спрайтах
+watch('src/icons/slider/*.svg', series('icons:slider')); // следит за изменениями в спрайтах
 
 task(
   'default',
@@ -160,7 +186,8 @@ task(
       'styles',
       'scripts',
       'icons:best',
-      'icons:footer'
+      'icons:footer',
+      'icons:slider'
     ),
     'server'
   )
