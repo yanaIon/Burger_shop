@@ -61,6 +61,11 @@
   width: 100%;
   flex-grow: 1;
   align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .slider__img-container {
@@ -91,11 +96,16 @@
   color: white;
   font-size: 14px;
   font-family: 'Ubuntu';
+
+  @include tablets {
+    text-align: center;
+  }
 }
 
 .slider__description-text-order {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .description-text__price {
@@ -103,10 +113,18 @@
   font-size: 30px;
   font-family: 'Gagalin';
   margin-right: 10%;
+
+  @include phones {
+    font-size: 20px;
+  }
 }
 
 .description-text__price span {
   font-size: 50px;
+
+  @include phones {
+    font-size: 22px;
+  }
 }
 
 .slider__composition {
@@ -120,6 +138,11 @@
   bottom: 75%;
   left: 0;
   cursor: pointer;
+
+  @include phones {
+    width: 80px;
+    height: 80px;
+  }
 }
 .slider__composition-products {
   display: none;
@@ -175,7 +198,20 @@
   top: 75%;
   left: 0;
   justify-content: center;
+
+  @include tablets {
+    top: 15%;
+    left: 87%;
+  }
+
+  @include phones {
+    width: 80px;
+    height: 80px;
+    top: 13%;
+    left: 83%;
+  }
 }
+
 .slider__kkal-img {
   position: absolute;
   width: 80%;
