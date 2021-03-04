@@ -1,4 +1,4 @@
-.slider {
+.burger {
   background-image: linear-gradient(to bottom, #f9b43b, #eb8c38, #f9b43b);
   background-repeat: no-repeat;
   background-position: 50%;
@@ -16,7 +16,8 @@
 }
 
 .slider_wrap {
-  display: flex;
+  //display: flex;
+  position: relative;
   height: 100%;
   width: 95%;
   overflow: hidden;
@@ -24,12 +25,13 @@
 
 .slider_lists {
   display: flex;
-  width: 500%;
-  flex-shrink: 0;
-  position: relative;
+  transform: translateX(0%);
+  height: 100%;
+  width: 100%;
+  //position: relative;
 }
 
-.scroll-down-btn__left {
+.scroll-btn__left {
   transform: rotate(90deg);
   top: 50%;
   left: 3%;
@@ -38,7 +40,7 @@
   padding: 0;
 }
 
-.scroll-down-btn__right {
+.scroll-btn__right {
   transform: rotate(270deg);
   top: 50%;
   left: 95%;
@@ -53,8 +55,9 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 20%;
+  width: 100%;
   height: 100%;
+  flex-shrink: 0;
 }
 .slider_content {
   display: flex;

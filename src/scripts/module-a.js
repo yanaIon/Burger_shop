@@ -1,9 +1,24 @@
 (function () {
-  const a = 11;
+  class Slider {
+    constructor(props) {
+      const { selector } = props;
+      this.position = 0;
+      this.selector = selector;
+      this.sliderDomElem = document.querySelector(selector);
+      this.sliderRightButton = this.sliderDomElem.querySelector(
+        '.scroll-down-btn__right'
+      );
+    }
 
-  const isEleven = (num) => num === 11;
+    handleClick(e) {}
 
-  const b = isEleven(a);
+    slideRight() {
+      // прокрутить на один вправо
+      // this
+    }
+  }
 
-  console.log(b, 'this is var b');
+  const slider = new Slider({ selector: '.module-slider' });
+
+  console.log(slider);
 })();
