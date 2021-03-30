@@ -22,13 +22,23 @@
       this.handleClickRight = this.handleClickRight.bind(this);
       // обработка клика по правой кнопке
       this.sliderRightButton.addEventListener('click', this.handleClickRight);
+
+      //левая кнопка
+      this.sliderLeftButton = this.sliderDomElem.querySelector(
+        '.scroll-btn.scroll-btn__left'
+      );
+      console.log(this);
+      // Привязываем this к обработчику т.к. при передаче в слушатель происходит потеря контекста (this)
+      this.handleClickLeft = this.handleClickLeft.bind(this);
+      // обработка клика по левой кнопке
+      this.sliderLeftButton.addEventListener('click', this.handleClickLeft);
     }
 
     handleClickRight() {
       this.slideRight();
     }
 
-    incrementPosition() {
+    incrementPositionRight() {
       this.position += 1;
     }
 
@@ -41,7 +51,24 @@
       if (this.position >= this.elemCount - 1) {
         return;
       }
-      this.incrementPosition();
+      this.incrementPositionRight();
+      // применим стили
+      this.updateCssPositionOfList();
+    }
+
+    handleClickLeft() {
+      this.slideLeft();
+    }
+    incrementPositionLeft() {
+      this.position -= 1;
+    }
+    slideLeft() {
+      // метод для листания влево
+      // уменьшим позицию на 1
+      if (this.position === 0) {
+        return;
+      }
+      this.incrementPositionLeft();
       // применим стили
       this.updateCssPositionOfList();
     }
