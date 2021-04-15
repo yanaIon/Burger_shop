@@ -1,0 +1,34 @@
+.close {
+  display: none;
+  color: #fff;
+  z-index: 150;
+  font: 30px Helvetica, sans-serif;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav.fullscrin {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: #2f3234;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .close {
+    display: inline-block;
+  }
+}
+
+// на body повесить оверфлов хидден когда открывается полноэкранное меню
+//когда закрываемБ отменить это
