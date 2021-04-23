@@ -2,7 +2,7 @@
   display: none;
   color: #fff;
   z-index: 150;
-  font: 30px Helvetica, sans-serif;
+  font: 40px Helvetica, sans-serif;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -12,7 +12,7 @@
 }
 
 .nav.fullscrin {
-  display: inline-block;
+  display: inline-flex;
   position: fixed;
   bottom: 0;
   top: 0;
@@ -28,7 +28,18 @@
   .close {
     display: inline-block;
   }
+  .nav__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &::after {
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+    }
+    .nav__link {
+      font-size: 40px;
+      padding: 10px;
+    }
+  }
 }
-
-// на body повесить оверфлов хидден когда открывается полноэкранное меню
-//когда закрываемБ отменить это
