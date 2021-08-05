@@ -159,9 +159,11 @@ task('icons:slider', () => {
 
 task('server', () => {
   browserSync.init({
+    // serveStatic: ['./dist'],
     server: {
       baseDir: './dist',
     },
+    // ghostMode: false,
     open: false,
   });
 });
@@ -190,5 +192,5 @@ task(
       'icons:slider'
     ),
     'server'
-  )
+    ),
 );
